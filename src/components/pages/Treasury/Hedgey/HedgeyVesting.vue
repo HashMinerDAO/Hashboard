@@ -3,7 +3,7 @@ import DropdownUi from '@/components/modules/DropdownUi.vue'
 
 import WalletDisplayHedgey from '@/components/modules/WalletDisplayHedgey.vue'
 import { useStore } from 'vuex';
-import { reactive, computed, watch, onMounted } from 'vue';
+import { reactive, computed, watch } from 'vue';
 import { useRouter } from 'vue-router'
 import ButtonSwitch from '@/components/modules/ButtonSwitch.vue';
 import LoadingEle from '@/components/interface/LoadingEle.vue';

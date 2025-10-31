@@ -4,29 +4,39 @@ const endpoint = import.meta.env.VITE_MIDDLEWARE_URL
 import { encodeStr } from '@/utils/strings.js'
 
 const actions = {
-  init({ context, getters, dispatch, commit }) {
-
-
-    commit("setDynamic", {
-      item: 'version',
-      value: import.meta.env.VITE_GIT_HASH
-    })
-    for (const [key, value] of Object.entries(localStorage)) {
+  async init({ context, getters, dispatch, commit }) {
+    try {
       commit("setDynamic", {
-        item: key,
-        value: value
+        item: 'version',
+        value: import.meta.env.VITE_GIT_HASH
       })
+      for (const [key, value] of Object.entries(localStorage)) {
+        commit("setDynamic", {
+          item: key,
+          value: value
+        })
+      }
+
+      // Try to fetch data but don't fail if it doesn't work
+      try {
+        await dispatch('expressFetch', { commit, dispatch, getters, context })
+      } catch (e) {
+        console.warn("Express fetch failed during init, continuing:", e)
+      }
+
+      commit("setDynamic", {
+        item: 'name',
+        value: import.meta.env.VITE_APPLICATION_NAME
+      })
+
+      commit('setDynamic', { item: 'applicationLoaded', value: true })
+      dispatch('responsiveUI', { commit })
+    } catch (e) {
+      console.error("Store init failed:", e)
+      // Still mark as loaded even if init fails
+      commit('setDynamic', { item: 'applicationLoaded', value: true })
+      dispatch('responsiveUI', { commit })
     }
-    dispatch('expressFetch', { commit, dispatch, getters, context })
-
-    commit("setDynamic", {
-      item: 'name',
-      value: import.meta.env.VITE_APPLICATION_NAME
-    })
-
-    commit('setDynamic', { item: 'applicationLoaded', value: true })
-    dispatch('responsiveUI', { commit })
-
   },
   fetchLincoin({ commit, dispatch, getters, context }) {
     commit("setData", { item: 'synchronisationStatus', value: "syncing" })
@@ -88,7 +98,13 @@ const actions = {
     commit("setData", { item: 'synchronisationStatus', value: "syncing" })
     try {
       fetch(`${endpoint}/api/get-data-express`, { method: 'get' })
-        .then(result => { return result.json() }).then(data => {
+        .then(result => {
+          if (!result.ok) {
+            throw new Error(`HTTP error! status: ${result.status}`)
+          }
+          return result.json()
+        })
+        .then(data => {
           if (data.payload) {
             try {
               commit("setHoldingsBTC", data.payload.btc.response)
@@ -111,12 +127,14 @@ const actions = {
             } catch(e){ console.log("Missing data:" + e) }
           }
         })
+        .catch(e => {
+          console.warn("API fetch failed, continuing with app:", e)
+          commit("setData", { item: 'synchronisationStatus', value: "error" })
+          // Don't show error notification to avoid blocking app load
+        })
     } catch (e) {
-      commit("setNotification", {
-        title: "Something went wrong",
-        className: 'error',
-        data: e,
-      })
+      console.warn("API fetch error, continuing with app:", e)
+      commit("setData", { item: 'synchronisationStatus', value: "error" })
     }
     let parentTimeout = false
     let secondaryTimeout = false
@@ -333,6 +351,307 @@ const actions = {
   },
   test(payload) {
     console.log(payload)
+  },
+
+  // Authentication actions
+  async registerUser({ commit }, userData) {
+    commit('setAuthLoading', true);
+    commit('setAuthError', null);
+
+    try {
+      const response = await fetch('http://localhost:3001/api/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Registration failed');
+      }
+
+      // Set user and token in state
+      commit('setAuthUser', data.user);
+      commit('setAuthToken', data.token);
+
+      return data;
+    } catch (error) {
+      commit('setAuthError', error.message);
+      throw error;
+    } finally {
+      commit('setAuthLoading', false);
+    }
+  },
+
+  async loginUser({ commit }, credentials) {
+    commit('setAuthLoading', true);
+    commit('setAuthError', null);
+
+    try {
+      const response = await fetch('http://localhost:3001/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(credentials),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Login failed');
+      }
+
+      // Set user and token in state
+      commit('setAuthUser', data.user);
+      commit('setAuthToken', data.token);
+
+      return data;
+    } catch (error) {
+      commit('setAuthError', error.message);
+      throw error;
+    } finally {
+      commit('setAuthLoading', false);
+    }
+  },
+
+  async logoutUser({ commit, getters }) {
+    try {
+      // Call logout endpoint if needed
+      const token = getters.getAuthToken;
+      if (token) {
+        await fetch('http://localhost:3001/api/auth/logout', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+          },
+        });
+      }
+    } catch (error) {
+      console.warn('Logout API call failed:', error);
+    } finally {
+      // Always clear local state
+      commit('logout');
+    }
+  },
+
+  async fetchUserProfile({ commit, getters }) {
+    const token = getters.getAuthToken;
+    if (!token) return;
+
+    try {
+      const response = await fetch('http://localhost:3001/api/auth/profile', {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        commit('setAuthUser', data.user);
+      } else if (response.status === 401) {
+        // Token expired, logout
+        commit('logout');
+      }
+    } catch (error) {
+      console.error('Failed to fetch user profile:', error);
+    }
+  },
+
+  // Initialize auth state from localStorage
+  initializeAuth({ commit, dispatch }) {
+    const token = localStorage.getItem('auth_token');
+    const user = localStorage.getItem('auth_user');
+
+    if (token && user) {
+      try {
+        const userData = JSON.parse(user);
+        commit('setAuthToken', token);
+        commit('setAuthUser', userData);
+
+        // Verify token is still valid
+        dispatch('fetchUserProfile');
+      } catch (error) {
+        // Invalid stored data, clear it
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_user');
+      }
+    }
+  },
+
+  // Investment Platform Actions
+  async createDeposit({ commit, getters }, depositData) {
+    commit('setDepositLoading', true);
+    commit('setDepositError', null);
+
+    try {
+      const token = getters.getAuthToken;
+      const response = await fetch('http://localhost:3001/api/deposits', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify(depositData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to create deposit');
+      }
+
+      return data;
+    } catch (error) {
+      commit('setDepositError', error.message);
+      throw error;
+    } finally {
+      commit('setDepositLoading', false);
+    }
+  },
+
+  async fetchDeposits({ commit, getters }) {
+    commit('setDepositLoading', true);
+    commit('setDepositError', null);
+
+    try {
+      const token = getters.getAuthToken;
+      const response = await fetch('http://localhost:3001/api/deposits', {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch deposits');
+      }
+
+      const data = await response.json();
+      commit('setDeposits', data.deposits);
+      return data.deposits;
+    } catch (error) {
+      commit('setDepositError', error.message);
+      throw error;
+    } finally {
+      commit('setDepositLoading', false);
+    }
+  },
+
+  async createInvestment({ commit, getters }, investmentData) {
+    commit('setInvestmentLoading', true);
+    commit('setInvestmentError', null);
+
+    try {
+      const token = getters.getAuthToken;
+      const response = await fetch('http://localhost:3001/api/investments', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify(investmentData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to create investment');
+      }
+
+      return data;
+    } catch (error) {
+      commit('setInvestmentError', error.message);
+      throw error;
+    } finally {
+      commit('setInvestmentLoading', false);
+    }
+  },
+
+  async fetchInvestments({ commit, getters }) {
+    commit('setInvestmentLoading', true);
+    commit('setInvestmentError', null);
+
+    try {
+      const token = getters.getAuthToken;
+      const response = await fetch('http://localhost:3001/api/investments', {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch investments');
+      }
+
+      const data = await response.json();
+      commit('setInvestments', data.investments);
+      return data.investments;
+    } catch (error) {
+      commit('setInvestmentError', error.message);
+      throw error;
+    } finally {
+      commit('setInvestmentLoading', false);
+    }
+  },
+
+  async createWithdrawal({ commit, getters }, withdrawalData) {
+    commit('setWithdrawalLoading', true);
+    commit('setWithdrawalError', null);
+
+    try {
+      const token = getters.getAuthToken;
+      const response = await fetch('http://localhost:3001/api/withdrawals', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify(withdrawalData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to create withdrawal');
+      }
+
+      return data;
+    } catch (error) {
+      commit('setWithdrawalError', error.message);
+      throw error;
+    } finally {
+      commit('setWithdrawalLoading', false);
+    }
+  },
+
+  async fetchWithdrawals({ commit, getters }) {
+    commit('setWithdrawalLoading', true);
+    commit('setWithdrawalError', null);
+
+    try {
+      const token = getters.getAuthToken;
+      const response = await fetch('http://localhost:3001/api/withdrawals', {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch withdrawals');
+      }
+
+      const data = await response.json();
+      commit('setWithdrawals', data.withdrawals);
+      return data.withdrawals;
+    } catch (error) {
+      commit('setWithdrawalError', error.message);
+      throw error;
+    } finally {
+      commit('setWithdrawalLoading', false);
+    }
   },
 
 }

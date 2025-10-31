@@ -22,14 +22,10 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
 import { useStore } from 'vuex';
 
 // Setup Vuex store
 const store = useStore();
-
-// Getters from Vuex store
-const application = computed(() => store.getters.application);
 
 const iAgree = () => {
   store.commit('setDynamic', {

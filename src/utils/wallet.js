@@ -1,8 +1,6 @@
 import { genericABI } from '@/components/data/genericABI'
 import { providers, Contract } from 'ethers'
 import { useDisconnect } from '@web3modal/ethers5/vue'
-import { useStore } from 'vuex'
-import { computed } from 'vue'
 import rawStore from '../store'
 const { disconnect } = useDisconnect()
 

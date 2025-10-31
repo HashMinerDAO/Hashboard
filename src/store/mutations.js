@@ -80,6 +80,87 @@ let mutations = {
   setSnapshotSpaces(state, payload) {
     state.snapshotSpaces = payload
   },
+
+  // Authentication mutations
+  setAuthUser(state, payload) {
+    state.auth.user = payload;
+    state.auth.isAuthenticated = !!payload;
+    if (payload) {
+      localStorage.setItem('auth_token', state.auth.token);
+      localStorage.setItem('auth_user', JSON.stringify(payload));
+    } else {
+      localStorage.removeItem('auth_token');
+      localStorage.removeItem('auth_user');
+    }
+  },
+
+  setAuthToken(state, payload) {
+    state.auth.token = payload;
+    if (payload) {
+      localStorage.setItem('auth_token', payload);
+    } else {
+      localStorage.removeItem('auth_token');
+    }
+  },
+
+  setAuthLoading(state, payload) {
+    state.auth.loading = payload;
+  },
+
+  setAuthError(state, payload) {
+    state.auth.error = payload;
+  },
+
+  logout(state) {
+    state.auth.user = null;
+    state.auth.token = null;
+    state.auth.isAuthenticated = false;
+    state.auth.loading = false;
+    state.auth.error = null;
+    localStorage.removeItem('auth_token');
+    localStorage.removeItem('auth_user');
+  },
+
+  // Investment platform mutations
+  setInvestments(state, payload) {
+    state.investments.list = payload;
+  },
+
+  setCurrentInvestment(state, payload) {
+    state.investments.currentInvestment = payload;
+  },
+
+  setDeposits(state, payload) {
+    state.deposits.list = payload;
+  },
+
+  setWithdrawals(state, payload) {
+    state.withdrawals.list = payload;
+  },
+
+  setInvestmentLoading(state, payload) {
+    state.investments.loading = payload;
+  },
+
+  setDepositLoading(state, payload) {
+    state.deposits.loading = payload;
+  },
+
+  setWithdrawalLoading(state, payload) {
+    state.withdrawals.loading = payload;
+  },
+
+  setInvestmentError(state, payload) {
+    state.investments.error = payload;
+  },
+
+  setDepositError(state, payload) {
+    state.deposits.error = payload;
+  },
+
+  setWithdrawalError(state, payload) {
+    state.withdrawals.error = payload;
+  }
 }
 
 export default mutations

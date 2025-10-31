@@ -4,76 +4,73 @@
     <div class="page-inner">
       <img class="icon" src="/src/assets/img/zh-circle.svg">
 
-      <h1>Welcome to #Hashboard</h1>
-      <p>HM/HMD Token-holders get access to the #Hashboard and can participate in the DAO Governance.</p>
+      <h1>Welcome to #Hashboard Investment Platform</h1>
+      <p>Invest in Bitcoin mining operations and track your ROI with real-time mining data integration.</p>
 
-      <div class="modal-relative centre" v-if="!application.hmHolderBool">
-        <template v-if="message === 'needZH'">
-          <h1><i class="i-alert-circle"></i> Notice</h1>
-          <p>Only Holders of the HM/HMD token may participate on this platform.<br>
-            Email <a href="mailto:zetta@hashminer.org" class="link">zetta@hashminer.org</a> for more information.</p>
-          <p>You can disconnect this wallet, {{ walletShortName(wallet) }}, and try another account.</p>
-          <p><a class="btn-link error" @click="doDisconnect">Disconnect {{ walletShortName(wallet) }} <i class="i-log-out"></i></a></p>
-        </template>
-        <template v-if="message === 'waiting'">
-          <h1><a class="spinner"></a> Connecting...</h1>
-          <p>Checking for wallet connection...</p>
-        </template>
-        <template v-if="message === 'needAcc'">
-          <h1><i class="i-alert-circle"></i> Welcome</h1>
-          <p>Connect your wallet to get started.</p>
-          <p class="centred-connect-btn">
-            <WalletConnector />
+      <!-- Investment Summary Section -->
+      <div v-if="isAuthenticated" class="investment-summary">
+        <div class="summary-card">
+          <h3>Portfolio Balance</h3>
+          <p class="balance">${{ userBalance.toLocaleString() }}</p>
+        </div>
+        <div class="summary-card">
+          <h3>Total ROI</h3>
+          <p class="roi" :class="{ positive: totalROI >= 0, negative: totalROI < 0 }">
+            {{ totalROI >= 0 ? '+' : '' }}{{ totalROI.toFixed(2) }}%
           </p>
-          <p>
-            <template v-if="wallet">
-              <a class="btn-link error" @click="reset">Reset wallet connection</a>
-            </template>
-          </p>
-        </template>
+        </div>
+        <div class="summary-card">
+          <h3>Active Investments</h3>
+          <p class="investments">{{ investments.length }}</p>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="modal-relative centre" v-if="!isAuthenticated">
+        <h1><i class="i-alert-circle"></i> Welcome</h1>
+        <p>Please log in to access your investment dashboard.</p>
+        <p class="centred-connect-btn">
+          <router-link to="/login" class="btn-link">Login</router-link>
+          <router-link to="/register" class="btn-link secondary">Register</router-link>
+        </p>
+      </div>
+
+      <div class="container" v-if="isAuthenticated">
         <div class="section">
-          <h2>Here's what you can do on #Hashboard:</h2>
+          <h2>Investment Dashboard:</h2>
           <div class="flex-shortcuts">
-            <router-link :to="{ name: 'mining' }" class="tile">
+            <router-link :to="{ name: 'deposit' }" class="tile">
               <img src="/static/img/image.webp">
+              <div class="text-container">
+                <div class="icon"><b-icon-plus-circle /></div>
+                <h3>Make a Deposit</h3>
+                <p>Deposit cryptocurrencies to fund your mining investments.</p>
+              </div>
+            </router-link>
+
+            <router-link :to="{ name: 'investment' }" class="tile">
+              <img src="/static/img/2image.webp">
+              <div class="text-container">
+                <div class="icon"><b-icon-graph-up /></div>
+                <h3>Manage Investments</h3>
+                <p>View your portfolio, track ROI, and manage your mining investments.</p>
+              </div>
+            </router-link>
+
+            <router-link :to="{ name: 'withdrawal' }" class="tile">
+              <img src="/static/img/3image.webp">
+              <div class="text-container">
+                <div class="icon"><b-icon-cash /></div>
+                <h3>Withdraw Funds</h3>
+                <p>Request withdrawals from your investment balance.</p>
+              </div>
+            </router-link>
+
+            <router-link :to="{ name: 'mining' }" class="tile">
+              <img src="/static/img/1image.webp">
               <div class="text-container">
                 <div class="icon"><b-icon-activity /></div>
                 <h3>View Mining Stats</h3>
                 <p>Get detailed metrics on hash rates, energy consumption, and profitability of Hashminer operations.</p>
-                <p v-if="!wallet">Connect your wallet to get started.</p>
-              </div>
-            </router-link>
-
-            <router-link :to="{ name: 'dao-treasury' }" class="tile">
-              <img src="/static/img/2image.webp">
-              <div class="text-container">
-                <div class="icon"><b-icon-bank-2 /></div>
-                <h3>Check ETH & ERC-20 Wallet balances</h3>
-                <p>Get a clear view of balances and addresses to ensuring accountability and financial management within the Hashminer ecosystem.</p>
-                <p v-if="!wallet">Connect your wallet to get started.</p>
-              </div>
-            </router-link>
-
-            <router-link :to="{ name: 'market' }" class="tile">
-              <img src="/static/img/3image.webp">
-              <div class="text-container">
-                <div class="icon"><b-icon-currency-exchange /></div>
-                <h3>Explore Market Data and Exchange HMD</h3>
-                <p>Explore market trends, and price movements of HMD and make informed investment decisions.</p>
-                <p v-if="!wallet">Connect your wallet to get started.</p>
-              </div>
-            </router-link>
-
-            <router-link :to="{ name: 'vote' }" class="tile">
-              <img src="/static/img/1image.webp">
-              <div class="text-container">
-                <div class="icon"><b-icon-lightning-charge-fill /></div>
-                <h3>Explore Proposals from Snapshot</h3>
-                <p>Stay informed about governance decisions and actively participate in the decision-making process by reviewing and voting on key initiatives.</p>
-                <p v-if="!wallet">Connect your wallet to get started.</p>
               </div>
             </router-link>
           </div>
@@ -84,63 +81,36 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted, getCurrentInstance } from 'vue';
+import { computed, onMounted } from 'vue';
 import { useStore } from 'vuex';
-import WalletConnector from '@/components/interface/WalletConnector.vue';
-import { walletShortName } from '@/utils/strings.js';
-import { doDisconnect } from '@/utils/wallet';
-const { proxy } = getCurrentInstance();
 
 // Setup Vuex store
 const store = useStore();
 
-// Reactive data
-const timeout = ref(false);
-const timeoutFunction = ref(false);
+// Computed properties for authentication
+const isAuthenticated = computed(() => store.getters.isAuthenticated);
+const userBalance = computed(() => store.getters.getUserBalance || 0);
+const investments = computed(() => store.getters.getInvestments || []);
 
-// Getters from Vuex store
-const application = computed(() => store.getters.application);
-const wallet = computed(() => store.getters.wallet);
-
-// Computed properties
-const message = computed(() => {
-  if (!timeout.value) return 'waiting';
-  if (!application.value.walletConnected) return 'needAcc';
-  if (!application.value.hmHolderBool) return 'needZH';
-  return '?';
+// Computed property for total ROI
+const totalROI = computed(() => {
+  if (!investments.value.length) return 0;
+  const totalInvested = investments.value.reduce((sum, inv) => sum + inv.amount, 0);
+  const currentValue = investments.value.reduce((sum, inv) => sum + (inv.amount * (1 + inv.roi / 100)), 0);
+  return totalInvested > 0 ? ((currentValue - totalInvested) / totalInvested) * 100 : 0;
 });
 
-// Methods
-const reset = () => {
-  doDisconnect();
-};
-
-watch(() => application.value.hmHolderBool, (value) => {
-  if (value === true) {
-    clearTimeout(timeoutFunction.value);
-    timeoutFunction.value = false;
-  }
-});
-
-watch(() => message.value, (value) => {
-  switch (value) {
-    case 'needAcc':
-  proxy.$toast("Connect your wallet to get started with Hashboard", {theme: 'dark', autoClose: false, type: 'error'});
-  break;
-      default:
-  }
-});
-
-onMounted(() => {
-  window.payWallThis = { application, timeout, timeoutFunction };
-  timeoutFunction.value = setTimeout(() => {
-    if (!application.value.hmHolderBool) {
-      timeout.value = true;
-      window.payWallThis = { application, timeout, timeoutFunction };
-      proxy.$toast("You'll need to hold HMD or HM to access Hashboard", {theme: 'dark', autoClose: false, type: 'error'});
-
+// Fetch investment data on mount if authenticated
+onMounted(async () => {
+  if (isAuthenticated.value) {
+    try {
+      await store.dispatch('fetchInvestments');
+      await store.dispatch('fetchDeposits');
+      await store.dispatch('fetchWithdrawals');
+    } catch (error) {
+      console.error('Failed to fetch investment data:', error);
     }
-  }, 8000);
+  }
 });
 </script>
 
@@ -267,5 +237,58 @@ p {
   a{
     // margin: 20px auto;
     padding: 5px 25px;}
+}
+
+.investment-summary {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+
+  .summary-card {
+    background: var(--neutral-6);
+    border-radius: $radius1;
+    padding: 20px;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+      color: var(--neutral-2);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .balance {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--brandeis-blue);
+      margin: 0;
+    }
+
+    .roi {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+
+      &.positive {
+        color: #28a745;
+      }
+
+      &.negative {
+        color: #dc3545;
+      }
+    }
+
+    .investments {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--neutral-1);
+      margin: 0;
+    }
+  }
 }
 </style>

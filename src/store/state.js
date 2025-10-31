@@ -3,7 +3,6 @@ let state = {
     notifications: [],
     version: false,
     applicationLoaded: false,
-    wallet: false,
     name: false,
     //UI States
     routerLoaded: false,
@@ -12,12 +11,7 @@ let state = {
     uiListSearchTerm: '',
     uiView: 'grid',
     uiThemeDark: true,
-    hmHolderBool: false,
-    hmBalance: false,
-    walletConnected: false,
-    walletSignatureVerified: false,
     activeFarm: 'lincoin',
-    walletConnectModal: false,
     postBodyByteLimit: 950000,
     postTextBytesMin: 16,
     postTextCharacterMin: 10,
@@ -30,8 +24,32 @@ let state = {
     systemCurrencies: false,
     disclaimerAgreed: false,
   },
-  data: {},
-  payload: false,
+  // User Authentication State
+  auth: {
+    user: null,
+    token: null,
+    isAuthenticated: false,
+    loading: false,
+    error: null
+  },
+  // Investment Platform State
+  investments: {
+    list: [],
+    currentInvestment: null,
+    loading: false,
+    error: null
+  },
+  deposits: {
+    list: [],
+    loading: false,
+    error: null
+  },
+  withdrawals: {
+    list: [],
+    loading: false,
+    error: null
+  },
+  // Legacy wallet state (for backward compatibility)
   wallet: false,
   holdings: { btc: false, eth: false },
   rates: false,
@@ -54,5 +72,8 @@ let state = {
   graphQL: { graphQL: false, graphQLDynamic: false, hedgeyGraphQL: false, },
   snapshotSpaces: false,
   physical_assets: false,
+  // Legacy application state (keeping for compatibility)
+  data: {},
+  payload: false,
 }
 export default state

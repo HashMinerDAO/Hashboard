@@ -17,8 +17,14 @@ app.use(BootstrapIconsPlugin)
 // Mount the app
 app.mount('#app')
 
+// Initialize store with error handling
 store.dispatch('init').catch(error => {
   console.error('Error during store initialization:', error)
+  // Continue with app even if store init fails
+  console.warn('Continuing with app despite store initialization error')
 });
+
+// Initialize authentication state
+store.dispatch('initializeAuth');
 
 app.config.globalProperties.$toast = toast;

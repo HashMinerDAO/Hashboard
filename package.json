@@ -16,7 +16,6 @@
     "@fontsource/ibm-plex-mono": "^5.0.13",
     "@snapshot-labs/snapshot.js": "^0.11.22",
     "@uniswap/widgets": "^2.59.0",
-    "@vitejs/plugin-vue": "^5.0.3",
     "@vue/apollo-composable": "4.0.0-beta.11",
     "@vueuse/core": "^10.6.1",
     "@vueuse/head": "^2.0.0",
@@ -40,7 +39,6 @@
     "minidenticons": "^4.2.0",
     "minisearch": "^6.2.0",
     "mixpanel-browser": "^2.48.1",
-    "react-redux": "^8.1.3",
     "remarkable": "^2.0.1",
     "remove-markdown": "^0.5.0",
     "sass": "^1.60.0",
@@ -60,8 +58,7 @@
     "vue-tradingview-widgets": "^1.2.4",
     "vue3-toastify": "^0.2.2",
     "vuedraggable": "^4.0.2",
-    "vuex": "^4.1.0",
-    "webpack": "^5.76.3"
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",

@@ -4,7 +4,7 @@
       <div class="shortcuts">
         <Zed />
         <SidebarToggle />
-        <WalletConnector @mouseenter="labelify" @mouseleave="unlabelify" />
+        <AuthConnector @mouseenter="labelify" @mouseleave="unlabelify" />
       </div>
       <div class="shortcuts">
         <label>Hashboard</label>
@@ -102,7 +102,7 @@
           <b-icon-box-arrow-right />
           <span>Disconnect</span>
         </a>
-        <WalletConnector @mouseenter="labelify" @mouseleave="unlabelify" />
+        <AuthConnector @mouseenter="labelify" @mouseleave="unlabelify" />
         <a
           :class="`sync-status ${data.synchronisationStatus}`"
           @click="store.dispatch('expressFetch')"
@@ -146,11 +146,10 @@ import { useStore } from 'vuex';
 import { useRoute } from 'vue-router';
 import { useDisconnect } from '@web3modal/ethers5/vue';
 import Zed from '@/components/interface/Zed.vue';
-import WalletConnector from './WalletConnector.vue';
+import AuthConnector from './AuthConnector.vue';
 import SidebarToggle from '@/components/interface/SidebarToggle.vue';
-import { profileImg, hasherName } from '@/utils/forum.js';
+import { profileImg } from '@/utils/forum.js';
 import { walletShortName } from '@/utils/strings.js';
-import { getIcon } from '@/utils/general.js';
 
 const store = useStore();
 const route = useRoute();

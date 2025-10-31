@@ -126,6 +126,20 @@ let getters = {
       }
     }
     return result
-  }
+  },
+
+  // Authentication getters
+  isAuthenticated: state => state.auth.isAuthenticated,
+  getUser: state => state.auth.user,
+  getUserBalance: state => state.auth.user?.balance || 0,
+  getAuthToken: state => state.auth.token,
+  getAuthLoading: state => state.auth.loading,
+  getAuthError: state => state.auth.error,
+
+  // Investment platform getters
+  getInvestments: state => state.investments.list,
+  getCurrentInvestment: state => state.investments.currentInvestment,
+  getDeposits: state => state.deposits.list,
+  getWithdrawals: state => state.withdrawals.list
 }
 export default getters

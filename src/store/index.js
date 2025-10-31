@@ -1,4 +1,3 @@
-import {createApp} from 'vue'
 import {createStore} from 'vuex'
 import state from './state'
 import getters from './getters'
@@ -12,6 +11,4 @@ const store = createStore({
   getters,
 })
 
-const app = createApp({})
-app.use(store)
 export default store

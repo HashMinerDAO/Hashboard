@@ -1,4 +1,3 @@
-import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 import LincoinAccountant from '@/components/pages/Farms/Lincoin/Accountant.vue'
@@ -27,8 +26,14 @@ import NewPostWrapper from '@/components/pages/Forum/NewPostWrapper.vue'
 import ProfileManager from '@/components/pages/ProfileManager.vue'
 import WalletManager from '@/components/pages/WalletManager.vue'
 
+// Authentication components
+import UserLogin from '@/components/auth/Login.vue'
+import UserRegister from '@/components/auth/Register.vue'
 
-const app = createApp({})
+// Investment platform components
+import DepositPage from '@/components/pages/Deposit.vue'
+import InvestmentPage from '@/components/pages/Investment.vue'
+import WithdrawalPage from '@/components/pages/Withdrawal.vue'
 
 const title = import.meta.env.VITE_APPLICATION_NAME
 
@@ -434,6 +439,65 @@ const routes = [
       ]
     }
   },
+  // Authentication routes
+  {
+    path: '/login',
+    name: 'login',
+    component: UserLogin,
+    meta: {
+      title: 'Login | ' + title,
+      breadcrumbs: ['login'],
+      metaTags: [
+        {
+          name: 'description',
+          content: 'Login to your Hashboard account'
+        },
+        {
+          property: 'og:description',
+          content: 'Login to your Hashboard account'
+        }
+      ]
+    }
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: UserRegister,
+    meta: {
+      title: 'Register | ' + title,
+      breadcrumbs: ['register'],
+      metaTags: [
+        {
+          name: 'description',
+          content: 'Create your Hashboard account'
+        },
+        {
+          property: 'og:description',
+          content: 'Create your Hashboard account'
+        }
+      ]
+    }
+  },
+  // Investment platform routes
+  {
+    path: '/deposits',
+    name: 'deposits',
+    component: DepositPage,
+    meta: {
+      title: 'Deposits | ' + title,
+      breadcrumbs: ['deposits'],
+      metaTags: [
+        {
+          name: 'description',
+          content: 'Make cryptocurrency deposits to your Hashboard account'
+        },
+        {
+          property: 'og:description',
+          content: 'Make cryptocurrency deposits to your Hashboard account'
+        }
+      ]
+    }
+  },
   {
     path: '/profile',
     name: 'profile',
@@ -476,11 +540,9 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  mode: 'history',
   base: import.meta.env.BASE_URL,
   routes
 })
-app.use(router)
 
 // This callback runs before every route change, including on page load.
 router.beforeEach((to, from, next) => {
