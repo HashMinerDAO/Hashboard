@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "initialized": true,
+  "timestamp": "2025-10-31T10:01:52+01:00",
+  "settings": {
+    "autoSave": true,
+    "cacheEnabled": true,
+    "logLevel": "info"
+  },
+  "metadata": {
+    "application": "Hashboard",
+    "description": "Memory bank for persistent application data"
+  }
+}
