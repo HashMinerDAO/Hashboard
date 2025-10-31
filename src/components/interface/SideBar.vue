@@ -124,10 +124,10 @@
         <a
           @mouseenter="labelify"
           @mouseleave="unlabelify"
-          href="https://zettahash.org"
+          href="https://hashminer.org"
         >
           <i class="i-hash"></i>
-          <span>Zettahash home</span>
+          <span>Hashminer home</span>
         </a>
       </div>
     </template>

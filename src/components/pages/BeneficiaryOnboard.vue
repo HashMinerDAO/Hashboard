@@ -3,7 +3,7 @@
     <LoadingEle :stop="(data.geoBlocked && data.geoBlocked.forbidden == false) ? true : false" :long="true" />
     <template v-if="data.geoBlocked && data.geoBlocked.forbidden == false">
       <div class="ui-ele front">
-        <h1>Buy ZHD Token</h1>
+        <h1>Buy HMD Token</h1>
         <p></p>
 
         <InlineInformation v-if="geoEligibility" :payload="geoEligibility" />
@@ -53,10 +53,10 @@
               <div class="horizontal-fill-status-bar"
                 :style="`--pc: ${(soldThisRound / activeRound.threshold) * 100}%;`">
                 <span class="name"></span>
-                <span class="value">{{ soldThisRound.toLocaleString() }} ZHD
+                <span class="value">{{ soldThisRound.toLocaleString() }} HMD
                   <template v-if="soldThisRound>0">
                     <br>
-                    <small>{{ Number(((soldThisRound * rates.ZH.priceUsd) * rates.USDT.priceUsd ).toFixed(2)).toLocaleString() }} USDT</small>
+                    <small>{{ Number(((soldThisRound * rates.HM.priceUsd) * rates.USDT.priceUsd ).toFixed(2)).toLocaleString() }} USDT</small>
                   </template>
                 </span>
                 <span class="pc">{{ ((soldThisRound / activeRound.threshold) * 100).toFixed(2) }} %</span>
@@ -91,7 +91,7 @@
                   <input type="checkbox" checked disabled />
                   <img src="/src/assets/img/checkbox.svg" />
                 </div>
-                <p>I understand that I am Purchasing ZH in {{ openRound.name }}.</p>
+                <p>I understand that I am Purchasing HM in {{ openRound.name }}.</p>
               </div>
               <div class="inline">
                 <div class="checkbox-container">
@@ -135,7 +135,7 @@
             </div>
 
             <div :class="`form-section`">
-              <label>ETHEREUM Address<br>(To receive ZH)</label>
+              <label>ETHEREUM Address<br>(To receive HM)</label>
               <div class="editor-wrapper">
                 <input :value="wallet" disabled>
               </div>
@@ -298,7 +298,7 @@ export default {
       }
       return temp
     },
-    totalSold() { return this.beneficiariesTotal - this.holdings.eth.beneficiary_zettahash_eth_zh.balance },
+    totalSold() { return this.beneficiariesTotal - this.holdings.eth.beneficiary_hashminer_eth_hm.balance },
     soldThisRound() {
       let val = 0
       if (this.totalSold >= this.lastRoundThreshold) {
@@ -386,7 +386,7 @@ export default {
       })
     },
     generateInvoice() {
-      const btcpayServerUrl = 'https://btcpay.zettahash.org'
+      const btcpayServerUrl = 'https://btcpay.hashminer.org'
       const storeId = 'AHiTJcmjqv5Ekvh1nWJyskMAeBTogrdu1jEja1E5wpLB'
       const apiKey = 'f2b66197bc856171a64ddbeafb250087c3303b40'
       const amount = this.investmentValueUSD
@@ -417,7 +417,7 @@ export default {
       })
         .then(response => response.json())
         .then(data => {
-          let invoiceID = `https://btcpay.zettahash.org/i/${data.id}`
+          let invoiceID = `https://btcpay.hashminer.org/i/${data.id}`
           this.invoiceURL = invoiceID
         })
 

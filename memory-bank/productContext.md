@@ -2,9 +2,9 @@
 
 ## Why Hashboard Exists
 
-The Zettahash DAO requires complete transparency to maintain community trust and enable informed decision-making. Traditional financial dashboards lack the comprehensive view needed for a mining operation DAO, particularly one spanning multiple blockchains and mining operations.
+The Hashminer DAO requires complete transparency to maintain community trust and enable informed decision-making. Traditional financial dashboards lack the comprehensive view needed for a mining operation DAO, particularly one spanning multiple blockchains and mining operations.
 
-Hashboard solves this by providing a unified, real-time view of all Zettahash operations, financials, and governance activities in one accessible interface.
+Hashboard solves this by providing a unified, real-time view of all Hashminer operations, financials, and governance activities in one accessible interface.
 
 ## Problems Solved
 
@@ -13,7 +13,7 @@ Hashboard solves this by providing a unified, real-time view of all Zettahash op
 - **Solution**: Centralized dashboard with live data feeds from all mining operations
 
 ### Complex Multi-Chain Operations
-- **Problem**: Zettahash operates across multiple blockchains (ETH, BTC, Linecoin) with different monitoring requirements
+- **Problem**: Hashminer operates across multiple blockchains (ETH, BTC, Linecoin) with different monitoring requirements
 - **Solution**: Unified interface aggregating data from all chains and operations
 
 ### Governance Participation Barriers

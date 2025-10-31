@@ -93,7 +93,7 @@ npm run serve  # Preview production build
 ## Dependencies and Integrations
 
 ### External APIs
-- **Zettahash Middleware**: Primary data source for mining and financial data
+- **Hashminer Middleware**: Primary data source for mining and financial data
 - **Snapshot**: Governance proposal and voting data
 - **Hedgey**: Vesting schedule information
 - **GraphQL Endpoints**: Various blockchain data providers

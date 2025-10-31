@@ -1,13 +1,13 @@
 <template lang="">
   <div>
-      <a v-for="(item, index) of zhVoting" target="_blank" class="block ui-ele asset-complicated tile" :key="index" :title="item.title" :href="item.url">
+      <a v-for="(item, index) of hmVoting" target="_blank" class="block ui-ele asset-complicated tile" :key="index" :title="item.title" :href="item.url">
         <div class="head">
 
         <div class="product-icon">
           <img :src="getIcon(item.img)">
         </div>
         <div class="type"><span>{{item.title}}</span> <span class="badge">{{item.type}}</span></div>
-        <div class="title">Zettahash Governance on {{item.title}} <i class="i-external-link"></i></div>
+        <div class="title">Hashminer Governance on {{item.title}} <i class="i-external-link"></i></div>
 
 
         </div>
@@ -21,10 +21,10 @@ export default {
   name: 'ProtocolVotingLocations',
   data() {
     return {
-      zhVoting: [
+      hmVoting: [
         {
           title: 'Snapshot',
-          url: 'https://snapshot.org/#/zettahash.eth',
+          url: 'https://snapshot.org/#/hashminer.eth',
           img: 'providers/snapshot',
           type:'Voting platform'
         }

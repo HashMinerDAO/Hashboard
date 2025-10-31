@@ -84,8 +84,8 @@ let getters = {
             balance = balance > 1 ? balance.toFixed(6) : balance.toFixed(8)
             type = "ERC-20"
             break;
-          case 'zh':
-          case 'zhd':
+          case 'hm':
+          case 'hmd':
             balance = balance > 1 ? balance.toFixed(6) : balance.toFixed(8)
             type = "ERC-20"
             break;

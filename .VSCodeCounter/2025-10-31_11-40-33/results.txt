@@ -1,0 +1,496 @@
+Date : 2025-10-31 11:40:33
+Directory : /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard
+Total : 418 files,  40235 codes, 49 comments, 1794 blanks, all 42078 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          3 |     17,968 |          0 |          3 |     17,971 |
+| vue                |         86 |     10,629 |         10 |        906 |     11,545 |
+| SCSS               |         19 |      5,158 |         18 |        281 |      5,457 |
+| SVG                |        278 |      3,590 |          0 |         75 |      3,665 |
+| Markdown           |         16 |      1,516 |          1 |        434 |      1,951 |
+| JavaScript         |         14 |      1,338 |         20 |         93 |      1,451 |
+| JSON with Comments |          1 |         19 |          0 |          1 |         20 |
+| HTML               |          1 |         17 |          0 |          1 |         18 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                      |        418 |     40,235 |         49 |      1,794 |     42,078 |
+| . (Files)                                                                                                              |          7 |     18,141 |          3 |         68 |     18,212 |
+| active-rules                                                                                                           |          2 |        160 |          1 |         38 |        199 |
+| clinerules-bank                                                                                                        |          6 |        591 |          0 |        161 |        752 |
+| clinerules-bank/clients                                                                                                |          2 |        145 |          0 |         39 |        184 |
+| clinerules-bank/frameworks                                                                                             |          2 |        203 |          0 |         58 |        261 |
+| clinerules-bank/project-types                                                                                          |          2 |        243 |          0 |         64 |        307 |
+| memory-bank                                                                                                            |          8 |        675 |          0 |        176 |        851 |
+| public                                                                                                                 |        268 |      3,244 |          0 |         73 |      3,317 |
+| public/static                                                                                                          |        268 |      3,244 |          0 |         73 |      3,317 |
+| public/static/flags                                                                                                    |        255 |      3,207 |          0 |         73 |      3,280 |
+| public/static/icons                                                                                                    |         12 |         36 |          0 |          0 |         36 |
+| public/static/tokens                                                                                                   |          1 |          1 |          0 |          0 |          1 |
+| src                                                                                                                    |        127 |     17,424 |         45 |      1,278 |     18,747 |
+| src (Files)                                                                                                            |          2 |         95 |          1 |         18 |        114 |
+| src/assets                                                                                                             |         29 |      5,504 |         18 |        283 |      5,805 |
+| src/assets/fonts                                                                                                       |          2 |        329 |          0 |          0 |        329 |
+| src/assets/fonts/hedgey                                                                                                |          1 |         14 |          0 |          0 |         14 |
+| src/assets/fonts/ico                                                                                                   |          1 |        315 |          0 |          0 |        315 |
+| src/assets/img                                                                                                         |          8 |         17 |          0 |          2 |         19 |
+| src/assets/img (Files)                                                                                                 |          7 |         16 |          0 |          2 |         18 |
+| src/assets/img/markets                                                                                                 |          1 |          1 |          0 |          0 |          1 |
+| src/assets/scss                                                                                                        |         19 |      5,158 |         18 |        281 |      5,457 |
+| src/assets/scss (Files)                                                                                                |         14 |      3,161 |          4 |        265 |      3,430 |
+| src/assets/scss/fonts                                                                                                  |          5 |      1,997 |         14 |         16 |      2,027 |
+| src/components                                                                                                         |         85 |     10,552 |         10 |        894 |     11,456 |
+| src/components/charts                                                                                                  |         17 |      2,443 |          1 |        174 |      2,618 |
+| src/components/charts (Files)                                                                                          |         12 |      1,729 |          1 |         97 |      1,827 |
+| src/components/charts/Mining                                                                                           |          5 |        714 |          0 |         77 |        791 |
+| src/components/interface                                                                                               |          8 |      1,047 |          0 |         89 |      1,136 |
+| src/components/modules                                                                                                 |         20 |      2,287 |          9 |        214 |      2,510 |
+| src/components/pages                                                                                                   |         32 |      4,128 |          0 |        360 |      4,488 |
+| src/components/pages (Files)                                                                                           |         13 |      1,971 |          0 |        188 |      2,159 |
+| src/components/pages/Farms                                                                                             |          4 |        169 |          0 |         10 |        179 |
+| src/components/pages/Farms (Files)                                                                                     |          1 |         40 |          0 |          7 |         47 |
+| src/components/pages/Farms/Lincoin                                                                                     |          2 |         86 |          0 |          2 |         88 |
+| src/components/pages/Farms/Ocean                                                                                       |          1 |         43 |          0 |          1 |         44 |
+| src/components/pages/Forum                                                                                             |          8 |      1,352 |          0 |        121 |      1,473 |
+| src/components/pages/Treasury                                                                                          |          4 |        336 |          0 |         37 |        373 |
+| src/components/pages/Treasury (Files)                                                                                  |          1 |        168 |          0 |         13 |        181 |
+| src/components/pages/Treasury/Hedgey                                                                                   |          1 |         70 |          0 |         18 |         88 |
+| src/components/pages/Treasury/Safe                                                                                     |          1 |         49 |          0 |          3 |         52 |
+| src/components/pages/Treasury/Specter                                                                                  |          1 |         49 |          0 |          3 |         52 |
+| src/components/pages/Vote                                                                                              |          3 |        300 |          0 |          4 |        304 |
+| src/components/tiles                                                                                                   |          8 |        647 |          0 |         57 |        704 |
+| src/router                                                                                                             |          1 |        488 |         11 |         26 |        525 |
+| src/store                                                                                                              |          5 |        599 |          5 |         29 |        633 |
+| src/utils                                                                                                              |          5 |        186 |          0 |         28 |        214 |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                               | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/.eslintrc.cjs                                                   | JavaScript         |         17 |          0 |          0 |         17 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/README.md                                                       | Markdown           |        104 |          0 |         60 |        164 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/active-rules/01-coding.md                                       | Markdown           |         87 |          1 |         18 |        106 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/active-rules/client-a.md                                        | Markdown           |         73 |          0 |         20 |         93 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/clinerules-bank/clients/client-a.md                             | Markdown           |         62 |          0 |         17 |         79 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/clinerules-bank/clients/client-b.md                             | Markdown           |         83 |          0 |         22 |        105 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/clinerules-bank/frameworks/react.md                             | Markdown           |        103 |          0 |         29 |        132 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/clinerules-bank/frameworks/vue.md                               | Markdown           |        100 |          0 |         29 |        129 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/clinerules-bank/project-types/api-service.md                    | Markdown           |        107 |          0 |         28 |        135 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/clinerules-bank/project-types/frontend-app.md                   | Markdown           |        136 |          0 |         36 |        172 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/index.html                                                      | HTML               |         17 |          0 |          1 |         18 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/jsconfig.json                                                   | JSON with Comments |         19 |          0 |          1 |         20 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/memory-bank/README.md                                           | Markdown           |         97 |          0 |         27 |        124 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/memory-bank/activeContext.md                                    | Markdown           |         64 |          0 |         19 |         83 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/memory-bank/config.json                                         | JSON               |         14 |          0 |          1 |         15 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/memory-bank/productContext.md                                   | Markdown           |         48 |          0 |         17 |         65 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/memory-bank/progress.md                                         | Markdown           |        162 |          0 |         46 |        208 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/memory-bank/projectbrief.md                                     | Markdown           |         30 |          0 |          6 |         36 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/memory-bank/systemPatterns.md                                   | Markdown           |        128 |          0 |         29 |        157 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/memory-bank/techContext.md                                      | Markdown           |        132 |          0 |         31 |        163 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/package-lock.json                                               | JSON               |     17,847 |          0 |          1 |     17,848 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/package.json                                                    | JSON               |        107 |          0 |          1 |        108 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ad.svg                                      | SVG                |        154 |          0 |          1 |        155 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ae.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/af.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ag.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ai.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/al.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/am.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ao.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/aq.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ar.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/as.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/at.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/au.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/aw.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ax.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/az.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ba.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bb.svg                                      | SVG                |          7 |          0 |          1 |          8 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bd.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/be.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bf.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bg.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bh.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bi.svg                                      | SVG                |         26 |          0 |          1 |         27 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bj.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bl.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bm.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bn.svg                                      | SVG                |         58 |          0 |          1 |         59 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bo.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bq.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/br.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bs.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bt.svg                                      | SVG                |        466 |          0 |          1 |        467 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bv.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bw.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/by.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/bz.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ca.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cc.svg                                      | SVG                |         19 |          0 |          1 |         20 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cd.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cf.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cg.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ch.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ci.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ck.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cl.svg                                      | SVG                |         14 |          0 |          1 |         15 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cm.svg                                      | SVG                |         15 |          0 |          1 |         16 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cn.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/co.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cu.svg                                      | SVG                |          6 |          0 |          1 |          7 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cv.svg                                      | SVG                |         24 |          0 |          1 |         25 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cw.svg                                      | SVG                |         16 |          0 |          1 |         17 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cx.svg                                      | SVG                |         15 |          0 |          1 |         16 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cy.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/cz.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/de.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/dj.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/dk.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/dm.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/do.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/dz.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ec.svg                                      | SVG                |        519 |          0 |          1 |        520 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ee.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/eg.svg                                      | SVG                |         78 |          0 |          1 |         79 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/eh.svg                                      | SVG                |          9 |          0 |          1 |         10 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/er.svg                                      | SVG                |          6 |          0 |          1 |          7 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/es.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/et.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/eu.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/fi.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/fj.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/fk.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/fm.svg                                      | SVG                |         16 |          0 |          1 |         17 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/fo.svg                                      | SVG                |         11 |          0 |          1 |         12 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/fr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ga.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gb-eng.svg                                  | SVG                |          7 |          0 |          1 |          8 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gb-nir.svg                                  | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gb-sct.svg                                  | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gb-wls.svg                                  | SVG                |          9 |          0 |          1 |         10 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gb.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gd.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ge.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gf.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gg.svg                                      | SVG                |          8 |          0 |          1 |          9 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gh.svg                                      | SVG                |          6 |          0 |          1 |          7 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gi.svg                                      | SVG                |         54 |          0 |          1 |         55 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gl.svg                                      | SVG                |          4 |          0 |          1 |          5 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gm.svg                                      | SVG                |          7 |          0 |          1 |          8 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gn.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gp.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gq.svg                                      | SVG                |         75 |          0 |          1 |         76 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gs.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gt.svg                                      | SVG                |        214 |          0 |          1 |        215 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gu.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gw.svg                                      | SVG                |         13 |          0 |          1 |         14 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/gy.svg                                      | SVG                |          7 |          0 |          1 |          8 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/hk.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/hm.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/hn.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/hr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ht.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/hu.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/id.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ie.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/il.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/im.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/in.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/io.svg                                      | SVG                |          1 |          0 |          1 |          2 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/iq.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ir.svg                                      | SVG                |         31 |          0 |          1 |         32 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/is.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/it.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/je.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/jm.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/jo.svg                                      | SVG                |          7 |          0 |          1 |          8 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/jp.svg                                      | SVG                |          4 |          0 |          1 |          5 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ke.svg                                      | SVG                |         23 |          0 |          1 |         24 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/kg.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/kh.svg                                      | SVG                |        116 |          0 |          1 |        117 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ki.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/km.svg                                      | SVG                |         13 |          0 |          1 |         14 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/kn.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/kp.svg                                      | SVG                |         16 |          0 |          1 |         17 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/kr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/kw.svg                                      | SVG                |          6 |          0 |          1 |          7 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ky.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/kz.svg                                      | SVG                |         37 |          0 |          1 |         38 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/la.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/lb.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/lc.svg                                      | SVG                |          6 |          0 |          1 |          7 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/li.svg                                      | SVG                |         56 |          0 |          1 |         57 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/lk.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/lr.svg                                      | SVG                |         15 |          0 |          1 |         16 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ls.svg                                      | SVG                |         23 |          0 |          1 |         24 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/lt.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/lu.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/lv.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ly.svg                                      | SVG                |          8 |          0 |          1 |          9 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ma.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mc.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/md.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/me.svg                                      | SVG                |         93 |          0 |          1 |         94 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mf.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mg.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mh.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mk.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ml.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mm.svg                                      | SVG                |         12 |          0 |          1 |         13 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mn.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mo.svg                                      | SVG                |         10 |          0 |          1 |         11 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mp.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mq.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ms.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mt.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mu.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mv.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mw.svg                                      | SVG                |         24 |          0 |          1 |         25 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mx.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/my.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/mz.svg                                      | SVG                |         13 |          0 |          1 |         14 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/na.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/nc.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ne.svg                                      | SVG                |          6 |          0 |          1 |          7 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/nf.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ng.svg                                      | SVG                |          4 |          0 |          1 |          5 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ni.svg                                      | SVG                |        161 |          0 |          1 |        162 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/nl.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/no.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/np.svg                                      | SVG                |         33 |          0 |          1 |         34 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/nr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/nu.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/nz.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/om.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pa.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pe.svg                                      | SVG                |        320 |          0 |          1 |        321 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pf.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pg.svg                                      | SVG                |         13 |          0 |          1 |         14 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ph.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pk.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pl.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pm.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pn.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ps.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pt.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/pw.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/py.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/qa.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/re.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ro.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/rs.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ru.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/rw.svg                                      | SVG                |         13 |          0 |          1 |         14 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sa.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sb.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sc.svg                                      | SVG                |          7 |          0 |          1 |          8 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sd.svg                                      | SVG                |          6 |          0 |          1 |          7 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/se.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sg.svg                                      | SVG                |         11 |          0 |          1 |         12 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sh.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/si.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sj.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sk.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sl.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sm.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sn.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/so.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ss.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/st.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sv.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sx.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sy.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/sz.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tc.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/td.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tf.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tg.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/th.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tj.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tk.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tl.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tm.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tn.svg                                      | SVG                |          9 |          0 |          1 |         10 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/to.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tr.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tt.svg                                      | SVG                |          5 |          0 |          1 |          6 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tv.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tw.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/tz.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ua.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ug.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/um.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/us.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/uy.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/uz.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/va.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/vc.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ve.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/vg.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/vi.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/vn.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/vu.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/wf.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ws.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/xk.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/ye.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/yt.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/za.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/zm.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/flags/zw.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/average-hashrate.svg                        | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/code.svg                                    | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/energised-hashrate.svg                      | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/machine-count.svg                           | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/machine-outages.svg                         | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/network-share.svg                           | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/offline-hashrate.svg                        | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/operating-margin.svg                        | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/pool-accepted-shares.svg                    | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/revenue.svg                                 | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/total-energy-demand.svg                     | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/icons/total-machines-deployed.svg                 | SVG                |          3 |          0 |          0 |          3 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/public/static/tokens/zh.svg                                     | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/App.vue                                                     | vue                |         77 |          0 |         12 |         89 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/fonts/hedgey/hedgey.svg                              | SVG                |         14 |          0 |          0 |         14 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/fonts/ico/ico.svg                                    | SVG                |        315 |          0 |          0 |        315 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/img/checkbox.svg                                     | SVG                |          7 |          0 |          1 |          8 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/img/hash.svg                                         | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/img/markets/dextools.svg                             | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/img/open-checkbox.svg                                | SVG                |          4 |          0 |          1 |          5 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/img/scatter.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/img/spinner.svg                                      | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/img/zh-circle.svg                                    | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/img/zh-rounded.svg                                   | SVG                |          1 |          0 |          0 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_colours.scss                                   | SCSS               |         99 |          0 |         13 |        112 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_constants.scss                                 | SCSS               |         29 |          0 |          7 |         36 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_fonts.scss                                     | SCSS               |          4 |          0 |          1 |          5 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_form.scss                                      | SCSS               |        163 |          0 |         25 |        188 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_forum.scss                                     | SCSS               |        220 |          0 |         16 |        236 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_general.scss                                   | SCSS               |        217 |          0 |         10 |        227 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_nav.scss                                       | SCSS               |        221 |          0 |         56 |        277 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_quill.scss                                     | SCSS               |         68 |          0 |          4 |         72 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_sidebar.scss                                   | SCSS               |        400 |          0 |         35 |        435 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_toasts.scss                                    | SCSS               |         37 |          4 |          6 |         47 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_ui.scss                                        | SCSS               |        988 |          0 |         24 |      1,012 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_vote-ui.scss                                   | SCSS               |        247 |          0 |         28 |        275 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/_wallet-ui.scss                                 | SCSS               |        462 |          0 |         39 |        501 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/fonts/hedgey.scss                               | SCSS               |         48 |          2 |          7 |         57 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/fonts/ico-variables.scss                        | SCSS               |        311 |          0 |          3 |        314 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/fonts/ico.scss                                  | SCSS               |      1,568 |          2 |          6 |      1,576 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/fonts/manrope.scss                              | SCSS               |         28 |          4 |          0 |         32 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/fonts/orbitron.scss                             | SCSS               |         42 |          6 |          0 |         48 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/assets/scss/styles.scss                                     | SCSS               |          6 |          0 |          1 |          7 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/AssetsStats.vue                           | vue                |         88 |          0 |          6 |         94 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/EnergyLineGraph.vue                       | vue                |        178 |          0 |         12 |        190 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/HashLineGraph.vue                         | vue                |        229 |          0 |         10 |        239 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/HashRate.vue                              | vue                |         83 |          1 |          5 |         89 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/MarketCandles.vue                         | vue                |        282 |          0 |         11 |        293 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/Mining/StatisticLarge.vue                 | vue                |        135 |          0 |          6 |        141 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/Mining/StatisticMedium.vue                | vue                |        138 |          0 |         22 |        160 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/Mining/StatisticMediumList.vue            | vue                |        175 |          0 |         24 |        199 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/Mining/StatisticMediumSemiCircleGauge.vue | vue                |        132 |          0 |         20 |        152 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/Mining/StatisticTile.vue                  | vue                |        134 |          0 |          5 |        139 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/PercentSemiCircle.vue                     | vue                |        105 |          0 |          8 |        113 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/PoolStats.vue                             | vue                |         80 |          0 |          5 |         85 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/ProfitLineGraph.vue                       | vue                |        254 |          0 |         15 |        269 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/VestingPeriodChartStats.vue               | vue                |         92 |          0 |          8 |        100 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/VestingPeriodLineGraph.vue                | vue                |        202 |          0 |         15 |        217 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/ZHTVChart.vue                             | vue                |         65 |          0 |          1 |         66 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/charts/ZHTVTechnicalAnalysis.vue                 | vue                |         71 |          0 |          1 |         72 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/interface/Footer.vue                             | vue                |         10 |          0 |          0 |         10 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/interface/LoadingEle.vue                         | vue                |        100 |          0 |         19 |        119 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/interface/Nav.vue                                | vue                |         74 |          0 |          6 |         80 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/interface/PayWall.vue                            | vue                |        109 |          0 |         10 |        119 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/interface/SideBar.vue                            | vue                |        261 |          0 |         16 |        277 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/interface/SidebarToggle.vue                      | vue                |        128 |          0 |          0 |        128 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/interface/WalletConnector.vue                    | vue                |        173 |          0 |         16 |        189 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/interface/Zed.vue                                | vue                |        192 |          0 |         22 |        214 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/ButtonSwitch.vue                         | vue                |         13 |          0 |          2 |         15 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/Disclaimer.vue                           | vue                |         83 |          0 |         10 |         93 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/DropdownUi.vue                           | vue                |         36 |          0 |          6 |         42 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/ForumPagination.vue                      | vue                |         65 |          0 |          7 |         72 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/ForumVoteUI.vue                          | vue                |         47 |          0 |          1 |         48 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/HedgeyApp.vue                            | vue                |         77 |          0 |          3 |         80 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/InlineInformation.vue                    | vue                |         58 |          0 |          1 |         59 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/Notifications.vue                        | vue                |        183 |          9 |         21 |        213 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/ProfileModule.vue                        | vue                |        153 |          0 |         24 |        177 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/Proposal.vue                             | vue                |        242 |          0 |         34 |        276 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/SpaceFollowUnfollow.vue                  | vue                |        157 |          0 |          9 |        166 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/UniSwap.vue                              | vue                |        152 |          0 |         33 |        185 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/UserWalletsUI.vue                        | vue                |         77 |          0 |          3 |         80 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/VestingPeriodHeaderRecipient.vue         | vue                |         30 |          0 |          0 |         30 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/VestingTable.vue                         | vue                |        132 |          0 |         18 |        150 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/VestingTableDetails.vue                  | vue                |        136 |          0 |         14 |        150 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/WalletDisplay.vue                        | vue                |        203 |          0 |         10 |        213 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/WalletDisplayHedgey.vue                  | vue                |        182 |          0 |         10 |        192 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/WalletsUI.vue                            | vue                |        220 |          0 |          8 |        228 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/modules/WelcomeBanner.vue                        | vue                |         41 |          0 |          0 |         41 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Assets.vue                                 | vue                |        267 |          0 |         23 |        290 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/BeneficiaryOnboard.vue                     | vue                |        452 |          0 |         49 |        501 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/CommunityConsensusForum.vue                | vue                |        115 |          0 |          1 |        116 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Farms/Lincoin/Accountant.vue               | vue                |         43 |          0 |          1 |         44 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Farms/Lincoin/Manager.vue                  | vue                |         43 |          0 |          1 |         44 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Farms/MiningDemoGauges.vue                 | vue                |         40 |          0 |          7 |         47 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Farms/Ocean/Manager.vue                    | vue                |         43 |          0 |          1 |         44 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Forum/ForumTopics.vue                      | vue                |        147 |          0 |         12 |        159 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Forum/ForumTopicsShortcuts.vue             | vue                |        156 |          0 |         16 |        172 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Forum/NewComment.vue                       | vue                |        172 |          0 |          6 |        178 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Forum/NewPost.vue                          | vue                |        342 |          0 |         32 |        374 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Forum/NewPostWrapper.vue                   | vue                |         63 |          0 |          1 |         64 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Forum/PreviewPost.vue                      | vue                |        181 |          0 |         18 |        199 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Forum/TopicReplies.vue                     | vue                |        175 |          0 |         25 |        200 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Forum/ViewTopic.vue                        | vue                |        116 |          0 |         11 |        127 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/LandingPage.vue                            | vue                |        239 |          0 |         32 |        271 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/LedgerWalletsHoldings.vue                  | vue                |         22 |          0 |          2 |         24 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Market.vue                                 | vue                |         75 |          0 |          7 |         82 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/MattermostRouter.vue                       | vue                |        119 |          0 |         16 |        135 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/MiningLandingPage.vue                      | vue                |        140 |          0 |         11 |        151 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Overview.vue                               | vue                |         32 |          0 |          2 |         34 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/PrivateSale.vue                            | vue                |         38 |          0 |          0 |         38 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/ProfileManager.vue                         | vue                |        139 |          0 |         20 |        159 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Treasury/Hedgey/HedgeyVesting.vue          | vue                |         70 |          0 |         18 |         88 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Treasury/Safe/Treasury.vue                 | vue                |         49 |          0 |          3 |         52 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Treasury/Specter/Treasury.vue              | vue                |         49 |          0 |          3 |         52 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Treasury/Treasury.vue                      | vue                |        168 |          0 |         13 |        181 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Vote.vue                                   | vue                |        138 |          0 |          7 |        145 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Vote/AboutVoteProtocol.vue                 | vue                |        187 |          0 |          2 |        189 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Vote/Proposals.vue                         | vue                |         49 |          0 |          2 |         51 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/Vote/VoteProtocolTreasury.vue              | vue                |         64 |          0 |          0 |         64 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/pages/WalletManager.vue                          | vue                |        195 |          0 |         18 |        213 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/tiles/BuySell.vue                                | vue                |        221 |          0 |         20 |        241 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/tiles/Energy.vue                                 | vue                |         61 |          0 |          4 |         65 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/tiles/HashRate.vue                               | vue                |         56 |          0 |          3 |         59 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/tiles/OrderBook.vue                              | vue                |         74 |          0 |          5 |         79 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/tiles/Payouts.vue                                | vue                |         64 |          0 |          5 |         69 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/tiles/PlacesToBuyZH.vue                          | vue                |         65 |          0 |          8 |         73 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/tiles/Profitability.vue                          | vue                |         40 |          0 |          4 |         44 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/components/tiles/ProtocolVotingLocations.vue                | vue                |         66 |          0 |          8 |         74 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/main.js                                                     | JavaScript         |         18 |          1 |          6 |         25 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/router/index.js                                             | JavaScript         |        488 |         11 |         26 |        525 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/store/actions.js                                            | JavaScript         |        315 |          3 |         22 |        340 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/store/getters.js                                            | JavaScript         |        128 |          1 |          3 |        132 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/store/index.js                                              | JavaScript         |         15 |          0 |          2 |         17 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/store/mutations.js                                          | JavaScript         |         84 |          0 |          2 |         86 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/store/state.js                                              | JavaScript         |         57 |          1 |          0 |         58 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/utils/forum.js                                              | JavaScript         |         79 |          0 |         17 |         96 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/utils/general.js                                            | JavaScript         |         51 |          0 |          4 |         55 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/utils/hedgey.js                                             | JavaScript         |          0 |          0 |          1 |          1 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/utils/strings.js                                            | JavaScript         |         11 |          0 |          2 |         13 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/src/utils/wallet.js                                             | JavaScript         |         45 |          0 |          4 |         49 |
+| /Users/tekoracle/Desktop/HashMiner/Local Dev/Hashboard/vite.config.js                                                  | JavaScript         |         30 |          3 |          4 |         37 |
+| Total                                                                                                                  |                    |     40,235 |         49 |      1,794 |     42,078 |
++------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

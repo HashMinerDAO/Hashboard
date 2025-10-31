@@ -1,13 +1,13 @@
-# Zettahash Hashboard Frontend
+# Hashminer Hashboard Frontend
 
-[Hashboard Application](https://hashboard.zettahash.org/)
+[Hashboard Application](https://hashboard.hashminer.org/)
 
-[Preview Builds](https://hashboard-preview.zettahash.org/)
+[Preview Builds](https://hashboard-preview.hashminer.org/)
 
 
 ![Deployment Badge](https://img.shields.io/badge/Current_Deployment_Environment-Cloudflare-orange)
 
-The Zettahash Hashboard Frontend is a crucial component of the Zettahash DAO, designed to ensure transparency and accessibility of project information for users. This frontend provides comprehensive data on financials, computational power, hashrate, profitability, market trends, tokenholder statistics, governance proposals powered by Snapshot, and communication channels.
+The Hashminer Hashboard Frontend is a crucial component of the Hashminer DAO, designed to ensure transparency and accessibility of project information for users. This frontend provides comprehensive data on financials, computational power, hashrate, profitability, market trends, tokenholder statistics, governance proposals powered by Snapshot, and communication channels.
 
 ## Table of Contents
 
@@ -82,7 +82,7 @@ Specify the backend server in your `.env` file. You can choose between a local s
 Example `.env` file:
 
 ```dotenv
-# Set to 'locallost' for local backend server or 'https://zettahash_hashboard_middleware.zetta-735.workers.dev' for the main full server
+# Set to 'locallost' for local backend server or 'https://hashminer_hashboard_middleware.hashminer-735.workers.dev' for the main full server
 VITE_MIDDLEWARE_URL=http://localhost:3000
 ```
 
@@ -92,7 +92,7 @@ This section documents ongoing changes and features of the Hashboard. Note that 
 
 ## Hashboard Ethos
 
-The Hashboard is committed to providing transparent access to Zettahash operational data and financials for investors and shareholders, adhering to Zettahash DAO policies.
+The Hashboard is committed to providing transparent access to Hashminer operational data and financials for investors and shareholders, adhering to Hashminer DAO policies.
 
 ## Features
 
@@ -136,7 +136,7 @@ We welcome contributions to the project. Please follow these steps for a smooth 
 
 This log chronicles significant changes across the ZH technical framework.
 
-- CDN: Updated Zettahash DAO Token symbol name for add-to-metamask function
+- CDN: Updated Hashminer DAO Token symbol name for add-to-metamask function
 - Hashboard components built after April 2024 should use Composition API
 - Frontend tooling upgraded to Vite
 
@@ -154,11 +154,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Contact
 
-For questions or support, please contact the Zettahash team at [development@zettahash.org](mailto:development@zettahash.org).
+For questions or support, please contact the Hashminer team at [development@hashminer.org](mailto:development@hashminer.org).
 
-Thank you for using Zettahash Hashboard!
+Thank you for using Hashminer Hashboard!
 
 ---
 
 This README file was last updated on 24 June 2024.
- 

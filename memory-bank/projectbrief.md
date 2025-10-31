@@ -1,10 +1,10 @@
 # Project Brief: Hashboard
 
 ## Overview
-Hashboard is a comprehensive dashboard application for the Zettahash DAO ecosystem, providing transparent access to project information, financials, computational power, hashrate, profitability, market trends, and governance data.
+Hashboard is a comprehensive dashboard application for the Hashminer DAO ecosystem, providing transparent access to project information, financials, computational power, hashrate, profitability, market trends, and governance data.
 
 ## Core Objectives
-- Ensure transparency and accessibility of Zettahash project information
+- Ensure transparency and accessibility of Hashminer project information
 - Provide real-time data on mining operations, financials, and market trends
 - Enable community participation through governance features
 - Maintain secure wallet integration and user management
@@ -28,7 +28,7 @@ Hashboard is a comprehensive dashboard application for the Zettahash DAO ecosyst
 - Responsive design for all devices
 
 ## Success Criteria
-- Complete transparency of all Zettahash operational data
+- Complete transparency of all Hashminer operational data
 - Seamless user experience across desktop and mobile
 - Reliable real-time data accuracy
 - Secure wallet and governance interactions

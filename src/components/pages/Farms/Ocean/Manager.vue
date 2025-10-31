@@ -11,7 +11,7 @@ export default {
   mounted() {
     const iframe = document.createElement('iframe')
     iframe.onload = this.frameLoaded
-    iframe.src = 'https://ocean.xyz/stats/bc1q26pwx77e3024uetddkr5mtk3llkk36juu64l6ll2w9nry7k2rymsg0la96.zettahash';
+    iframe.src = 'https://ocean.xyz/stats/bc1q26pwx77e3024uetddkr5mtk3llkk36juu64l6ll2w9nry7k2rymsg0la96.hashminer';
     iframe.classList.add("dom-iframe")
     document.querySelector(".iframe").replaceWith(iframe)
     this.$store.commit('setDynamic', {

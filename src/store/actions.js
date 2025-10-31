@@ -319,7 +319,7 @@ const actions = {
   },
   async backendAPI({ commit }, url) {
     // Default options are marked with *
-    const requestURL = `https://api.flat18.co.uk/zettahash/`
+    const requestURL = `https://api.flat18.co.uk/hashminer/`
     let query = await fetch(requestURL, {
       method: 'post',
       headers: {

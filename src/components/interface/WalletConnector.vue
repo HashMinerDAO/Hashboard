@@ -14,9 +14,9 @@ const alchemyKey = import.meta.env.VITE_ALCHEMY_API_KEY;
 
 const projectId = import.meta.env.VITE_WALLET_CONNECT_PROJECT_ID;
 const metadata = {
-  name: 'Zettahash Hashboard',
-  description: 'Zettahash Hashboard',
-  url: 'https://hashboard.zettahash.org',
+  name: 'Hashminer Hashboard',
+  description: 'Hashminer Hashboard',
+  url: 'https://hashboard.hashminer.org',
   icons: ['/src/assets/img/tokens/zh.png']
 }
 
@@ -50,7 +50,7 @@ export default {
   name: "WalletConnector",
   data() {
     return {
-      zettahash: '0x2C0e15190aCB858Bf74447928Cbd8Fb9709dCB19',
+      hashminer: '0x2C0e15190aCB858Bf74447928Cbd8Fb9709dCB19',
       checkConnectionInterval: false,
       network: false,
       buttonConnectUI: false,
@@ -93,9 +93,9 @@ export default {
     async fetchBalance() {
       const walletProvider = this.application.walletConnectModal.getWalletProvider()
       const ethersProvider = new providers.Web3Provider(walletProvider)
-      const zhContract = new Contract(this.zettahash, genericABI, ethersProvider)
-      const zhBalance = this.web3ModalAccountAddress ? await zhContract.balanceOf(this.web3ModalAccountAddress) : false
-      const formatted = zhBalance / Math.pow(10, 18)//await formatUnits(zhBalance, 18)
+      const hmContract = new Contract(this.hashminer, genericABI, ethersProvider)
+      const hmBalance = this.web3ModalAccountAddress ? await hmContract.balanceOf(this.web3ModalAccountAddress) : false
+      const formatted = hmBalance / Math.pow(10, 18)//await formatUnits(hmBalance, 18)
       return { formatted: formatted }
     },
     async updateAccount() {
@@ -104,11 +104,11 @@ export default {
         let holderBool = Number(balance.formatted) >= 1 ? true : false
 
         this.$store.commit('setDynamic', {
-          item: 'zhHolderBool',
+          item: 'hmHolderBool',
           value: holderBool
         })
         this.$store.commit('setDynamic', {
-          item: 'zhBalance',
+          item: 'hmBalance',
           value: balance.formatted
         })
 
@@ -122,11 +122,11 @@ export default {
         })
       } else {
         this.$store.commit('setDynamic', {
-          item: 'zhHolderBool',
+          item: 'hmHolderBool',
           value: false
         })
         this.$store.commit('setDynamic', {
-          item: 'zhBalance',
+          item: 'hmBalance',
           value: '0.00'
         })
 

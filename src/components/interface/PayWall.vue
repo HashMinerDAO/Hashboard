@@ -5,9 +5,9 @@
       <h1>
         <i class="i-alert-circle"></i> Notice
       </h1>
-      <p>Only Holders of the ZH or ZHD token may participate on this platform.<br>
-        Email <a href="mailto:zetta@zettahash.org"
-          class="link">zetta@zettahash.org</a> for more information.</p>
+      <p>Only Holders of the HM or HMD token may participate on this platform.<br>
+        Email <a href="mailto:zetta@hashminer.org"
+          class="link">zetta@hashminer.org</a> for more information.</p>
       <p>You can disconnect this wallet, {{ walletShortName(wallet) }}, and try another account.</p>
       <p><a class="btn-link error" @click="doDisconnect()">Disconnect {{ walletShortName(wallet) }} <i
             class="i-log-out"></i></a></p>
@@ -62,11 +62,11 @@ export default {
 
       if (!this.timeout) { return 'waiting' }
       if (!this.application.walletConnected) { return 'needAcc' }
-      if (!this.application.zhHolderBool) { return 'needZH' }
+      if (!this.application.hmHolderBool) { return 'needZH' }
       return '?'
     },
-    zhHolderBool() {
-      return this.application.zhHolderBool
+    hmHolderBool() {
+      return this.application.hmHolderBool
     },
   },
   components: {
@@ -79,7 +79,7 @@ export default {
     },
   },
   watch: {
-    zhHolderBool(value) {
+    hmHolderBool(value) {
       if (value == true) {
         clearTimeout(this.timeoutFunction)
         this.timeoutFunction = false
@@ -89,7 +89,7 @@ export default {
   mounted() {
     window.payWallThis = this
     this.timeoutFunction = setTimeout(() => {
-      if (!window.payWallThis.application.zhHolderBool) {
+      if (!window.payWallThis.application.hmHolderBool) {
         window.payWallThis.timeout = true
         window.payWallThis = this
       }

@@ -50,9 +50,9 @@
               <div>
                 <br />
                 <h4>Terms of service</h4>
-                <a href="https://zettahash.org/organization/#terms-of-service" target="_blank">
+                <a href="https://hashminer.org/organization/#terms-of-service" target="_blank">
                   <div>
-                    https://zettahash.org/organization/#term...
+                    https://hashminer.org/organization/#term...
                     <i class="i-external-link"></i>
                   </div>
                 </a>

@@ -5,13 +5,13 @@
       <img class="icon" src="/src/assets/img/zh-circle.svg">
 
       <h1>Welcome to #Hashboard</h1>
-      <p>ZH/ZHD Token-holders get access to the #Hashboard and can participate in the DAO Governance.</p>
+      <p>HM/HMD Token-holders get access to the #Hashboard and can participate in the DAO Governance.</p>
 
-      <div class="modal-relative centre" v-if="!application.zhHolderBool">
+      <div class="modal-relative centre" v-if="!application.hmHolderBool">
         <template v-if="message === 'needZH'">
           <h1><i class="i-alert-circle"></i> Notice</h1>
-          <p>Only Holders of the ZH/ZHD token may participate on this platform.<br>
-            Email <a href="mailto:zetta@zettahash.org" class="link">zetta@zettahash.org</a> for more information.</p>
+          <p>Only Holders of the HM/HMD token may participate on this platform.<br>
+            Email <a href="mailto:zetta@hashminer.org" class="link">zetta@hashminer.org</a> for more information.</p>
           <p>You can disconnect this wallet, {{ walletShortName(wallet) }}, and try another account.</p>
           <p><a class="btn-link error" @click="doDisconnect">Disconnect {{ walletShortName(wallet) }} <i class="i-log-out"></i></a></p>
         </template>
@@ -42,7 +42,7 @@
               <div class="text-container">
                 <div class="icon"><b-icon-activity /></div>
                 <h3>View Mining Stats</h3>
-                <p>Get detailed metrics on hash rates, energy consumption, and profitability of Zettahash operations.</p>
+                <p>Get detailed metrics on hash rates, energy consumption, and profitability of Hashminer operations.</p>
                 <p v-if="!wallet">Connect your wallet to get started.</p>
               </div>
             </router-link>
@@ -52,7 +52,7 @@
               <div class="text-container">
                 <div class="icon"><b-icon-bank-2 /></div>
                 <h3>Check ETH & ERC-20 Wallet balances</h3>
-                <p>Get a clear view of balances and addresses to ensuring accountability and financial management within the Zettahash ecosystem.</p>
+                <p>Get a clear view of balances and addresses to ensuring accountability and financial management within the Hashminer ecosystem.</p>
                 <p v-if="!wallet">Connect your wallet to get started.</p>
               </div>
             </router-link>
@@ -61,8 +61,8 @@
               <img src="/static/img/3image.webp">
               <div class="text-container">
                 <div class="icon"><b-icon-currency-exchange /></div>
-                <h3>Explore Market Data and Exchange ZHD</h3>
-                <p>Explore market trends, and price movements of ZHD and make informed investment decisions.</p>
+                <h3>Explore Market Data and Exchange HMD</h3>
+                <p>Explore market trends, and price movements of HMD and make informed investment decisions.</p>
                 <p v-if="!wallet">Connect your wallet to get started.</p>
               </div>
             </router-link>
@@ -106,7 +106,7 @@ const wallet = computed(() => store.getters.wallet);
 const message = computed(() => {
   if (!timeout.value) return 'waiting';
   if (!application.value.walletConnected) return 'needAcc';
-  if (!application.value.zhHolderBool) return 'needZH';
+  if (!application.value.hmHolderBool) return 'needZH';
   return '?';
 });
 
@@ -115,7 +115,7 @@ const reset = () => {
   doDisconnect();
 };
 
-watch(() => application.value.zhHolderBool, (value) => {
+watch(() => application.value.hmHolderBool, (value) => {
   if (value === true) {
     clearTimeout(timeoutFunction.value);
     timeoutFunction.value = false;
@@ -134,10 +134,10 @@ watch(() => message.value, (value) => {
 onMounted(() => {
   window.payWallThis = { application, timeout, timeoutFunction };
   timeoutFunction.value = setTimeout(() => {
-    if (!application.value.zhHolderBool) {
+    if (!application.value.hmHolderBool) {
       timeout.value = true;
       window.payWallThis = { application, timeout, timeoutFunction };
-      proxy.$toast("You'll need to hold ZHD or ZH to access Hashboard", {theme: 'dark', autoClose: false, type: 'error'});
+      proxy.$toast("You'll need to hold HMD or HM to access Hashboard", {theme: 'dark', autoClose: false, type: 'error'});
 
     }
   }, 8000);
